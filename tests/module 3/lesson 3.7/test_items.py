@@ -1,7 +1,8 @@
 from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 
-def check_exists_by_css_selector(browser ,selector):
+
+def check_exists_by_css_selector(browser, selector):
     try:
         browser.find_element(By.CSS_SELECTOR, selector)
     except NoSuchElementException:
