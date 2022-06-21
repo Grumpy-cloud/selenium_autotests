@@ -10,7 +10,7 @@ def check_exists_by_css_selector(browser, selector):
     return True
 
 
-def test_user_should_see_button(browser):
+def test_button_is_present_on_page(browser):
     link = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/'
     browser.get(link)
     button_presence = check_exists_by_css_selector(browser, 'button.btn-add-to-basket')
